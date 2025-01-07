@@ -19,7 +19,8 @@ const Projects = () => {
         "Automated content creation for 50+ weekly posts",
         "Built marketplace platform with real-time analytics",
         "Integrated with LinkedIn and Pinterest APIs"
-      ]
+      ],
+      url: "https://github.com/Schedlr-Team-10"
     },
     {
       title: "Ecommerce Application",
@@ -30,7 +31,8 @@ const Projects = () => {
         "Implemented core features and secure authentication",
         "Enhanced API performance with caching",
         "Designed scalable MongoDB database architecture"
-      ]
+      ],
+      url: "https://github.com/vamsi2792/MERN-Stack-Project"
     },
     {
       title: "Personality Analysis and Prediction",
@@ -41,7 +43,8 @@ const Projects = () => {
         "Achieved 93% prediction accuracy",
         "Reduced processing time by 30%",
         "Optimized data preprocessing techniques"
-      ]
+      ],
+      url: "https://github.com/vamsi2792/personality-analysis"
     }
   ];
 
@@ -64,7 +67,10 @@ const Projects = () => {
           </motion.h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
-              <motion.div
+              <motion.a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -102,7 +108,7 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </motion.div>

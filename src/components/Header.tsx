@@ -4,8 +4,8 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Header = () => {
   const socialLinks = [
-    { icon: <Github size={24} />, url: "https://github.com" },
-    { icon: <Linkedin size={24} />, url: "https://linkedin.com" },
+    { icon: <Github size={24} />, url: "https://github.com/vamsi2792" },
+    { icon: <Linkedin size={24} />, url: "https://www.linkedin.com/in/vamsi-muppana/" },
     { icon: <Mail size={24} />, url: "mailto:mvamsi.2792@gmail.com" }
   ];
 
